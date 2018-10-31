@@ -1,7 +1,11 @@
-
-
- <body>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./templates/head.html') %>
+</head>
+<%= require('html-loader!./templates/header.html') %>
+<%= require('html-loader!./templates/modale.html') %>
+<body>
 <main>
     <section class="header-section">
         <div class="container">
@@ -11,8 +15,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit integer vulputate nisl eu odio porttitor pulvinar nunc congue bitur pretium.</p>
                     <div class="btn-wrap">
                         <div class="mb-5">
-                            <a class="btn btn-my mt-3" href="#">Выбрать курс</a><span></span>
-                            <a class="btn btn-my mt-3" href="#">Программы лояльности</a>
+                            <button class="btn btn-my mt-3" href="all_curses.html">Выбрать курс</button><span></span>
+                            <button class="btn btn-my mt-3" href="#">Программы лояльности</button>
                         </div>
                         
                     </div>
@@ -32,108 +36,85 @@
                 <h4>Успеть на ближайшие курсы </h4>
             </div>
             <div class="row">
-                <div class="col-md-4 columns">                        
-                    <div class="card-advance
-                    cuadro_intro_hover mb-5 shadow">
-                        <div class="one">                                                  
-                            <h3>Python</h3>                                
-                        </div>
-                        <a href="#">
-                            <div class="caption">
-                                <div class="blur"></div>
-                                <div class="caption-text">
-                                    <h5>Разработчик Python</h5>
-                                    <p>С 3 декабря  5месяцев</p>   
-                                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card curses-card gradient-1 shadow curses-card-hover"> 
+                        <a href="one_curse.html">                
+                            <div class="card-body">
+                                <h3>Администратор</h3>
+                                <h3> Linux</h3>
+                                <hr class="heading-devider float-left "><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
                             </div>
                         </a>
                     </div>
-                    <div class="meta">Успеть!</div>           
-                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
-                        <div class="two">
-                                                  
-                            <h3>Java</h3>                                
-                        </div>
-                        <a href="#">
-                            <div class="caption">
-                                <div class="blur"></div>
-                                <div class="caption-text">
-                                    <h5>Разработчик Java</h5>
-                                    <p>С 24 ноября  5 месяцев</p>   
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="meta invisible">Успеть!</div>                      
+                    <span class="meta-2">Успеть!</span>
                 </div>
-                 
-                <div class="col-md-4 columns">                        
-                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
-                        <div class="three">                          
-                            <h3>PHP</h3>                                
-                        </div>
-                        <a href="#">
-                            <div class="caption">
-                                <div class="blur"></div>
-                                <div class="caption-text">
-                                    <h5>Backend разработчик на PHP</h5>
-                                    <p>В декабре 5 месяцев</p>   
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="meta">Успеть!</div>          
-                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
-                        <div class="four">
-                                                  
-                            <h3>JS</h3>                                
-                        </div>
+                <div class="col-lg-4 col-md-6 mb-4">                   
+                    <div class="card curses-card gradient-2 shadow">
                         <a href="">
-                            <div class="caption">    
-                                <div class="blur"></div>
-                                <div class="caption-text">
-                                    <h5>Разаработчик Java script</h5>
-                                    <p>С 24 ноября 5 месяцев</p>   
-                                </div>                               
+                            <div class="card-body">
+                                <h3>Разработчик</h3>
+                                <h3>Python</h3>
+                                <hr class="heading-devider float-left"><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
                             </div>
                         </a>
                     </div>
-                    <div class="meta">Успеть!</div>              
+                    <span class="meta-2">Успеть!</span>
                 </div>
-
-                <div class="col-md-4 columns">
-                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
-                        <div class="fife">                           
-                            <h3>DevOps</h3>                                
-                        </div>
-                            <div class="caption">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card curses-card gradient-3 shadow">
                         <a href="">
-                                <div class="blur"></div>
-                                <div class="caption-text">
-                                    <h5>DevOps практики и инструменты</h5>
-                                    <p>Старт курса 24 ноября</p>   
-                                </div>
+                            <div class="card-body">
+                                <h3>Разработчик</h3>
+                                <h3>PHP</h3>
+                                <hr class="heading-devider float-left"><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
                             </div>
-                        </a>
+                        </a> 
                     </div>
-                    <div class="meta invisible">Успеть!</div> 
-                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
-                        <div class="six">
-                            
-                            <h3>Linux</h3>                                
-                        </div>
-                        <a href="">
-                            <div class="caption">
-                                <div class="blur"></div>
-                                <div class="caption-text">
-                                    <h5>Администратор Linux</h5>
-                                    <p>Старт курса 24 ноября</p>   
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="meta">Успеть!</div>                    
+                    <span class="meta-2 invisible">Успеть!</span>
                 </div>
+                <div class="col-lg-4 col-md-6 mb-4">                
+                    <div class="card curses-card gradient-4 shadow">
+                        <a href=""> 
+                            <div class="card-body child">
+                                <h3>Администратор</h3>
+                                <h3> Linux</h3>
+                                <hr class="heading-devider float-left "><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
+                            </div>
+                        </a>                                               
+                    </div>
+                    <span class="meta-2 ">Успеть!</span>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">                   
+                    <div class="card curses-card gradient-5 shadow">
+                        <a href="">
+                            <div class="card-body">
+                                <h3>DevOps</h3>
+                                <h3>Инжинер</h3>
+                                <hr class="heading-devider float-left"><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
+                            </div>
+                        </a>    
+                    </div>
+                    <span class="meta-2">Успеть!</span>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card curses-card gradient-6 shadow">
+                        <a href="">
+                            <div class="card-body">
+                                <h3>Разработчик</h3>
+                                <h3>PHP</h3>
+                                <hr class="heading-devider float-left"><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
+                            </div>
+                        </a>     
+                    </div>
+                    <span class="meta-2 invisible">Успеть!</span>
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -150,7 +131,7 @@
                                     <div class="row">
                                         <div class="col-3 d-none d-lg-block">
                                             <div class="card-additions-icon">
-                                                <i class="material-icons md-100">monetization_on</i>
+                                                <i class="material-icons md-100">&#xe263;</i>
                                             </div>
                                         </div>
                                         <div class="col">
@@ -169,7 +150,7 @@
                                     <div class="row">
                                         <div class="col-3 d-none d-lg-block">
                                             <div class="card-additions-icon">
-                                                <i class="material-icons md-100">sentiment_satisfied_alt</i> 
+                                                <i class="material-icons md-100">&#xe813;</i> 
                                             </div>
                                         </div>
                                         <div class="col">
@@ -190,7 +171,7 @@
                                     <div class="row">
                                         <div class="col-3 d-none d-lg-block">
                                             <div class="card-additions-icon">
-                                                <i class="material-icons md-100">import_contacts</i>
+                                                <i class="material-icons md-100">&#xe0e0;</i>
                                             </div>
                                         </div>
                                         <div class="col">
@@ -209,7 +190,7 @@
                                     <div class="row">
                                         <div class="col-3 d-none d-lg-block">
                                             <div class="card-additions-icon">
-                                                <i class="material-icons md-100">important_devices</i>
+                                                <i class="material-icons md-100">&#xe912;</i>
                                             </div>
                                         </div>
                                         <div class="col">
@@ -241,28 +222,32 @@
             <div class="text-center">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/tch1.jpg" alt="" width="180" height="180"></a>
+                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="" alt="" width="180" height="180"></a>
                         <h5>Джаконда</h5>
                         <p>DevOps практики и инструменты</p>
                         
                     </div>
                     <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/th2.jpg" alt="" width="180" height="180"></a>
+                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="" alt="" width="180" height="180"></a>
                         <h5>Александр Сергеевич</h5>
                         <p>Администратор Linux</p>
                     </div>
                     <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/th3.jpg" alt="" width="180" height="180"></a>
+                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="" alt="" width="180" height="180"></a>
                         <h5>Василий Иваныч</h5>
                         <p>Наш дворник</p>
                     </div>
                     <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/th4.jpg" alt="" width="180" height="180"></a>
+                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="" alt="" width="180" height="180"></a>
                         <h5>Арнольд</h5>
                         <p>Администратор Linux</p>
                     </div>
                 </div>
             </div>
         </div>        
-    </section>
+    </section>   
+</main>  
 
+<%= require('html-loader!./templates/footer.html') %>
+</body>
+</html>

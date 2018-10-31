@@ -1,8 +1,11 @@
 module.exports = function() {
   return {
     devServer: {
-      stats: 'errors-only',
-      overlay: true,
+       proxy: {
+       '/users': 'http://127.0.0.1:8000',
+        
+      
+     }
     },
   };
 };
