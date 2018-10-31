@@ -2,4 +2,4 @@
 
 ## Команды:
 - npm start
-- npm buil
+- npm run build
